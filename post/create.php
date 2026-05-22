@@ -52,13 +52,15 @@ $categories = mysqli_query($conn, "SELECT * FROM categories");
                 placeholder="Tulis isi artikel..."
                 required
             ></textarea>
-        </div>
+  <div class="d-flex gap-2">
 
-        <button type="submit" class="btn btn-primary">
-            Simpan Artikel
-        </button>
+    <button type="submit" class="btn btn-primary">
+        Simpan Artikel
+    </button>
 
-    </form>
+    <a href="index.php" class="btn btn-secondary">
+        Kembali
+    </a>
+
 </div>
-
 <?php include '../layout/footer.php'; ?>
